@@ -23,7 +23,7 @@ export default function Reviews() {
     ];
 
     return (    
-        <section className="reviews">
+        <section className="reviews" id="reviews">
             <h2 className='reviews__title'>Отзывы</h2>
             <Swiper
                 slidesPerView={'auto'}

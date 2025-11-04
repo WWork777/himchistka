@@ -93,7 +93,11 @@
         z-index: 2;
         line-height: 1.4;
     }
-
+    &__cta-link{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     &__cta-button {
         width: 70%;
         display: flex;
@@ -145,7 +149,7 @@
     // Мобильная адаптация
     @media (max-width: 768px) {
         margin-bottom: 50px;
-        
+
         &__circle {
             width: min(400px, 90vw);
             padding: 8%;

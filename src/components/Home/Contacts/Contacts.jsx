@@ -4,7 +4,7 @@ import "./Contacts.scss";
 
 export default function Contacts() {
   return (
-    <section className="contacts">
+    <section className="contacts" id="contacts">
       <h2 className="contacts__title">Контакты</h2>
       <div className="contacts__grid">
         <div className="contacts__image">

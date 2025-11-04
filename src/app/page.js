@@ -50,8 +50,8 @@ export default function Home() {
   return (
     <>
     <Hero />
-    <Services title="Услуги" services={services} />
-    <Services title="Дополнительные услуги" services={dopServices} />
+    <Services title="Услуги" services={services} link="services"/>
+    <Services title="Дополнительные услуги" services={dopServices} link="dopServices"/>
     <Reviews/>
     <Contacts/>
     </>
