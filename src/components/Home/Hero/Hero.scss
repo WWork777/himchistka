@@ -1,0 +1,176 @@
+.hero{
+    position: relative;
+    background-image: url("/Home/Hero.png");
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-top: 50px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+    }
+
+    &__circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        aspect-ratio: 1 / 1;
+        width: min(750px, 80vw); // Адаптивная ширина
+        max-width: 800px;
+        padding: 4%;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(4px);
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s ease;
+
+        // @supports (backdrop-filter: blur(15px)) or (-webkit-backdrop-filter: blur(15px)) {
+        //     background: rgba(0, 0, 0, 0.2);
+        //     backdrop-filter: blur(15px);
+        //     -webkit-backdrop-filter: blur(15px);
+        // }
+
+        // Двойная граница
+        &::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            inset: -14px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    &__title {
+        color: #fff;
+        font-size: clamp(2rem, 4vw, 85px); // Адаптивный размер
+        font-weight: 400;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 2;
+        line-height: 1.2;
+    }
+
+    &__subtitle {
+        color: #fff;
+        font-size: clamp(1rem, 2vw, 27px); // Адаптивный размер
+        font-weight: 300;
+        margin-bottom: 6rem;
+        opacity: 0.9;
+        position: relative;
+        z-index: 2;
+        line-height: 1.4;
+    }
+
+    &__cta-button {
+        width: 70%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: 1rem 2.5rem;
+        border: 4px solid #fff;
+        background-color: #ffffff00;
+        color: #fff;
+        letter-spacing: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 2;
+
+        background-image: url("/btn-triangle.png");
+        background-repeat: no-repeat;
+        background-position: bottom 10px right 10px;
+        background-size: 15px 15px;
+
+        &:hover {
+            transform: scale(1.05);
+            background-position: bottom 5px right 5px;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    &__cta-text {
+        font-family: var(--montserrat);
+        font-size: clamp(1rem, 2vw, 27px); // Адаптивный размер
+        font-weight: 300;
+    }
+
+    // Затемнение фона для лучшей читаемости
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    // Мобильная адаптация
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+        
+        &__circle {
+            width: min(400px, 90vw);
+            padding: 8%;
+        }
+
+        &__title {
+            margin-bottom: 0.5rem;
+        }
+
+        &__subtitle {
+            margin-bottom: 1.5rem;
+            max-width: 90%;
+        }
+
+        &__cta-button {
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            background-size: 10px 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__circle {
+            width: 95vw;
+            padding: 10%;
+        }
+    }
+}
