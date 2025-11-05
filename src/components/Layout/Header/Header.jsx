@@ -19,9 +19,11 @@ export default function Header() {
         </nav>
 
         {/* Колонка 3: Телефон */}
+        <a href="">
         <div className="header__phone">
           +7(905)-904-92-39
         </div>
+        </a>
       </div>
     </header>
   );

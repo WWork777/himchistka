@@ -145,7 +145,13 @@
         background: rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
+    @media (max-width: 1500px) {
+        &__circle {
+            width: min(650px, 80vw);
+            padding: 8%;
+        }
 
+    }
     // Мобильная адаптация
     @media (max-width: 768px) {
         margin-bottom: 50px;
