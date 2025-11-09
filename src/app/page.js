@@ -11,22 +11,22 @@ export default function Home() {
     {
       id: 1,
       title: "Химчистка диванов",
-      price: "от 800 руб.",
-      image: "/Services/1.png", // Замените на ваши пути к изображениям
+      price: "от 3000 руб.",
+      image: "/Services/himDivan.webp", // Замените на ваши пути к изображениям
       buttonText: "Заказать"
     },
     {
       id: 2,
       title: "Химчистка ковров",
-      price: "от 800 руб.",
-      image: "/Services/1.png",
+      price: "от 1500 руб.",
+      image: "/Services/himKovrov.webp",
       buttonText: "Заказать"
     },
     {
       id: 3,
       title: "Химчистка стульев",
-      price: "от 800 руб.",
-      image: "/Services/1.png",
+      price: "от 500 руб.",
+      image: "/Services/himChair.webp",
       buttonText: "Заказать"
     }
   ];
@@ -35,15 +35,22 @@ export default function Home() {
     {
       id: 1,
       title: "Озонирование",
-      price: "от 800 руб.",
-      image: "/Services/1.png", // Замените на ваши пути к изображениям
+      price: "от 500 руб.",
+      image: "/Services/Ozonirovanie.webp", // Замените на ваши пути к изображениям
       buttonText: "Заказать"
     },
     {
       id: 2,
       title: "Сухой туман",
-      price: "от 800 руб.",
-      image: "/Services/1.png",
+      price: "от 1000 руб.",
+      image: "/Services/suhoiTuman.webp",
+      buttonText: "Заказать"
+    },
+    {
+      id: 3,
+      title: "Уборка после пожара",
+      price: "от 2000 руб.",
+      image: "/Services/fire.webp",
       buttonText: "Заказать"
     }
   ];
