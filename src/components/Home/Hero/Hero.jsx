@@ -8,7 +8,7 @@ export default function Hero() {
                 <div className="hero__circle">
                     <h1 className="hero__title">ВЫЕЗДНАЯ ХИМЧИСТКА</h1>
                     <p className="hero__subtitle">Мы поможем погрузиться в мир чистоты</p>
-                    <a className="hero__cta-link" href="">
+                    <a className="hero__cta-link" href="tel:+7 (905)-904-92-39">
                         <button className="hero__cta-button">
                         <span className="hero__cta-text">Заказать</span>
                         </button>

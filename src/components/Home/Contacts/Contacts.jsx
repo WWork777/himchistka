@@ -12,21 +12,21 @@ export default function Contacts() {
         </div>
         <div className="contacts__info">
           <div className="contacts__item">
-            <a href="">
+            <a href="https://yandex.ru/maps/64/kemerovo/house/prospekt_v_v_mikhaylova_3bk5/bE8YdAVjTEUPQFtvfXhzdnlhYQ==/?ll=86.223508%2C55.427525&z=17">
                 <h3>Адрес:</h3>
-                <p>600000, г. Кемерово, ул. Ленина 3</p>
+                <p>г. Кемерово, Лесная Поляна, пр-кт В.В. Михайлова, 3б, корпус 5.</p>
             </a>
           </div>
           <div className="contacts__item">
-            <a href="">
+            <a href="tel:+7 (905)-904-92-39">
                 <h3>Номер телефона:</h3>
-                <p>8 905 904 92 39</p>
+                <p>+7 (905)-904-92-39</p>
             </a>
           </div>
           <div className="contacts__item">
-            <a href="">
+            <a href="mailto:Vova-gvalt@yandex.ru">
                 <h3>E-mail:</h3>
-                <p>lala@mail.ru</p>
+                <p>Vova-gvalt@yandex.ru</p>
             </a>
             
           </div>

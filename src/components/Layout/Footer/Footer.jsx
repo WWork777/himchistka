@@ -11,10 +11,10 @@ export default function Footer() {
         </div>
 
         {/* Колонка 2: О нас */}
-        <div className="footer__column">
+        {/* <div className="footer__column">
             <a href="#about"><h4 className="footer__title">О нас</h4></a>
           
-        </div>
+        </div> */}
 
         {/* Колонка 3: Услуги */}
         <div className="footer__column">
@@ -35,7 +35,7 @@ export default function Footer() {
             <a href=""><img className="footer__messenger-icon"src="/Footer/whatsapp.svg" alt="" /></a>
             <a href=""><img className="footer__messenger-icon"src="/Footer/phone.svg" alt="" /></a>
           </div>
-          <a href=""><div className="footer__phone">8 905 904 92 39</div></a>
+          <a href="tel:+7 (905)-904-92-39"><div className="footer__phone">+7 (905)-904-92-39</div></a>
         </div>
       </div>
     </footer>
