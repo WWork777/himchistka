@@ -96,6 +96,9 @@
 
 @media (max-width: 768px) {
   .header {
+    .header__phone{
+      margin-bottom: 10px;
+    }
 
     &__nav{
         gap:2.5rem;
@@ -127,6 +130,7 @@
 
 @media (max-width: 460px) {
   .header {
+    
     &__nav{
         gap:2rem;
         font-size: 14px;
