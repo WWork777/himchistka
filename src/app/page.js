@@ -48,7 +48,7 @@ export default function Home() {
     },
     {
       id: 3,
-      title: "Уборка после пожара",
+      title: "Химчистка после пожара с устранением любых запахов",
       price: "от 2000 руб.",
       image: "/Services/fire.webp",
       buttonText: "Заказать"
