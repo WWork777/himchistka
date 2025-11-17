@@ -6,7 +6,6 @@ import Footer from "@/components/Layout/Footer/Footer";
 
 
 
-
 const montserrat = Montserrat({
   variable: "--montserrat",
   subsets: ["latin"],
@@ -35,6 +34,14 @@ export const metadata = {
     images: [{ url: "/Home/Hero.png", alt: "Выездная химчистка ВС ЧистЮля" }],
     type: "website",
   },
+  icons: {
+    icon: [
+      { rel: 'icon', type: 'image/svg+xml', url: '/favicon/favicon.svg' },
+    ],
+    shortcut: '/favicon/favicon.ico',
+    apple: '/favicon/apple-touch-icon.png',
+  },
+  manifest: '/favicon/site.webmanifest',
 };
 
 export default function RootLayout({ children }) {
