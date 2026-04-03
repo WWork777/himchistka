@@ -30,12 +30,12 @@ export default function Footer() {
         {/* Колонка 5: Контакты */}
         <div className="footer__column">
           <a href="#contacts"><h4 className="footer__title">Контакты</h4></a>
-          <div className="footer__messengers">
+          {/* <div className="footer__messengers">
             <a href=""><img className="footer__messenger-icon"src="/Footer/telegram.svg" alt="" /></a>
             <a href=""><img className="footer__messenger-icon"src="/Footer/whatsapp.svg" alt="" /></a>
             <a href=""><img className="footer__messenger-icon"src="/Footer/phone.svg" alt="" /></a>
-          </div>
-          <a href="tel:+7 (905)-904-92-39"><div className="footer__phone">+7 (905)-904-92-39</div></a>
+          </div> */}
+          <a href="tel:+7 (905)-904-92-39"> <div className="footer__phone">  +7 (905)-904-92-39</div></a>
         </div>
       </div>
     </footer>
